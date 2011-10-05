@@ -9,7 +9,7 @@
 #import "CGUtils.h"
 
 
-CGPathRef newPathForRoundedRect(CGRect rect, CGFloat cornerRadius, BOOL roundTopCorners, BOOL roundBottomCorners)
+CGPathRef createPathForRoundedRect(CGRect rect, CGFloat cornerRadius, BOOL roundTopCorners, BOOL roundBottomCorners)
 
 {
 	CGMutablePathRef retPath = CGPathCreateMutable();

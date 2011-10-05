@@ -55,7 +55,7 @@
 	{
 		CGRect imageRect = [self contentRectForBounds:self.bounds];
 		
-		CGPathRef roundedRectPath = newPathForRoundedRect(imageRect, 3.0, YES, YES);
+		CGPathRef roundedRectPath = createPathForRoundedRect(imageRect, 3.0, YES, YES);
 		CGContextSetGrayFillColor(ctx, 0.73, 0.4);
 		CGContextAddPath(ctx, roundedRectPath);
 		CGContextFillPath(ctx);

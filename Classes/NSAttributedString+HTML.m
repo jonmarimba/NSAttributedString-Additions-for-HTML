@@ -63,15 +63,15 @@ NSString *DTDefaultLineHeightMultiplier = @"DTDefaultLineHeightMultiplier";
 - (id)initWithHTML:(NSData *)data options:(NSDictionary *)options documentAttributes:(NSDictionary **)dict
 {
  	// Specify the appropriate text encoding for the passed data, default is UTF8 
-	NSString *textEncodingName = [options objectForKey:NSTextEncodingNameDocumentOption];
-	NSStringEncoding encoding = NSUTF8StringEncoding; // default
-	
-	if (textEncodingName)
-	{
-		CFStringEncoding cfEncoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)textEncodingName);
-		encoding = CFStringConvertEncodingToNSStringEncoding(cfEncoding);
-	}
-	
+//	NSString *textEncodingName = [options objectForKey:NSTextEncodingNameDocumentOption];
+//	NSStringEncoding encoding = NSUTF8StringEncoding; // default
+//	
+//	if (textEncodingName)
+//	{
+//		CFStringEncoding cfEncoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)textEncodingName);
+//		encoding = CFStringConvertEncodingToNSStringEncoding(cfEncoding);
+//	}
+//	
 	// custom option to limit image size
 	NSValue *maxImageSizeValue = [options objectForKey:DTMaxImageSize];
 	
